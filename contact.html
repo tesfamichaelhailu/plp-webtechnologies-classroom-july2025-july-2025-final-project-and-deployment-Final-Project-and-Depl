@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — EMARE</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/index.html">EMARE</a>
+      <nav id="main-nav" class="nav">
+        <a href="/index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+    <form id="contact-form" class="contact-form" novalidate>
+      <label>
+        Name
+        <input type="text" name="name" id="name" required minlength="2">
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" id="email" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" id="message" required minlength="10"></textarea>
+      </label>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> EMARE ICT Hub — Built by Tesfamichael</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

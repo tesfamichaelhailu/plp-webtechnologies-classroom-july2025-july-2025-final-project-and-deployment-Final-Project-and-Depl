@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — EMARE</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/index.html">EMARE</a>
+      <nav id="main-nav" class="nav">
+        <a href="/index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Selected Projects</h1>
+    <section class="grid projects-grid">
+      <article class="project-card reveal" tabindex="0" data-project="1">
+        <img src="images/im2.jpg" alt="Project 1">
+        <h3>Emagn — Secure transactions</h3>
+        <p>Escrow-style marketplace demo.</p>
+        <button class="btn open-project" data-src="projects/project-1.html">View</button>
+      </article>
+      <!-- more cards -->
+    </section>
+  </main>
+
+  <!-- modal for project preview -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button id="modal-close" class="modal-close" aria-label="Close">×</button>
+      <iframe id="modal-frame" src="" title="Project preview"></iframe>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> EMARE ICT Hub — Built by Tesfamichael</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
